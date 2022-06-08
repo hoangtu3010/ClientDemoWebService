@@ -20,8 +20,8 @@
     <title>List Products</title>
 </head>
 <body>
-<jsp:include page="/_header.jsp"/>
 <div class="container">
+    <jsp:include page="/_header.jsp"/>
     <h1 class="text-center">List Products</h1>
     <table class="table">
         <thead>

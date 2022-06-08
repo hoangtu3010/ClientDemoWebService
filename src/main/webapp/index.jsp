@@ -15,11 +15,13 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<jsp:include page="_header.jsp"/>
+    <div class="container">
+        <jsp:include page="_header.jsp"/>
 
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+        <h1><%= "Hello World!" %>
+        </h1>
+        <br/>
+        <a href="hello-servlet">Hello Servlet</a>
+    </div>
 </body>
 </html>
