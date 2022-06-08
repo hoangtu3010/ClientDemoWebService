@@ -17,7 +17,7 @@ public interface ProductService {
     public Call<Product> save(@Body Product product);
 
     @PUT("api/v1/products/{id}")
-    public Call<Product> update(@Path("id") Integer id, @Body Product product);
+    public Call<Boolean> update(@Path("id") Integer id, @Body Product product);
 
     @DELETE("api/v1/products/{id}")
     public Call<Boolean> delete(@Path("id") Integer id);

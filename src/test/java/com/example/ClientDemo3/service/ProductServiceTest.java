@@ -38,7 +38,7 @@ class ProductServiceTest {
 
     @Test
     void save() {
-        productService.save(new Product(6, "Product 6", new BigDecimal(23)));
+        productService.save(new Product("Product 6", new BigDecimal(23)));
     }
 
     @Test

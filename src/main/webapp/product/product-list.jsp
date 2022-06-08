@@ -23,12 +23,16 @@
 <div class="container">
     <jsp:include page="/_header.jsp"/>
     <h1 class="text-center">List Products</h1>
+    <div class="d-flex justify-content-end mb-5">
+        <a class="btn button-custom" href="/products/create"><i class="bi bi-plus-circle"></i> Create</a>
+    </div>
     <table class="table">
         <thead>
         <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Price</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -39,6 +43,14 @@
             <td><%=product.getName()%>
             </td>
             <td><%=product.getPrice()%>
+            </td>
+            <td>
+                <a href="/products/update?id=<%= product.getId() %>" type="button"
+                   class="btn-action-icon btn-custom-edit"><i
+                        class="bi bi-pencil-square"></i></a>
+                <a href="/products/delete?id=<%= product.getId() %>" type="button"
+                   class="btn-action-icon btn-custom-delete btn-delete"><i
+                        class="bi bi-trash3"></i></a>
             </td>
         </tr>
         <%

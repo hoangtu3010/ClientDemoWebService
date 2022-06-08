@@ -11,4 +11,28 @@
         <servlet-name>GetProductController</servlet-name>
         <url-pattern>/products</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateProductController</servlet-name>
+        <servlet-class>com.example.ClientDemo3.controller.CreateProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProductController</servlet-name>
+        <url-pattern>/products/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateProductController</servlet-name>
+        <servlet-class>com.example.ClientDemo3.controller.UpdateProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProductController</servlet-name>
+        <url-pattern>/products/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteProductController</servlet-name>
+        <servlet-class>com.example.ClientDemo3.controller.DeleteProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteProductController</servlet-name>
+        <url-pattern>/products/delete</url-pattern>
+    </servlet-mapping>
 </web-app>
